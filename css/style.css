@@ -1,0 +1,765 @@
+@font-face{
+        font-family: "Muller";
+        src: local("Muller-Regular"),
+        url("../fonts/MullerRegular.woff2") format("woff2"),
+        url("../fonts/MullerRegular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        }
+
+@font-face{
+        font-family: "Muller";
+        src: local("Muller-Light"),
+        url("../fonts/MullerLight.woff2") format("woff2"),
+        url("../fonts/MullerLight.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+        }
+        
+@font-face{
+        font-family: "Muller";
+        src: local("Muller-Mediumr"),
+        url("../fonts/MullerMedium.woff2") format("woff2"),
+        url("../fonts/MullerMedium.woff") format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+        }        
+
+@font-face{
+        font-family: "Muller";
+        src: local("Muller-Bold"),
+        url("../fonts/MullerBold.woff2") format("woff2"),
+        url("../fonts/MullerBold.woff") format("woff");
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+        }
+
+html{
+  box-sizing: border-box;
+}
+
+::before,
+::after{
+  box-sizing: inherit;
+}
+
+body{
+  background-color: #E5E5E5;
+  margin: 0 auto;
+  max-width: 1170px;
+  font-family: 'Muller', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-vertical{
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.container{
+  margin-top: 70px;
+}
+
+.header{
+  margin-top: 30px;
+}
+
+.header-start{
+  align-items: center;
+}
+
+.header-logo{
+  text-decoration: none;
+}
+
+.slogan{
+  font-family: inherit;
+  font-size: 20px;
+  font-weight:lighter;
+}
+
+.log-in{
+  padding-left: 25px;
+  background-image: url("../img/keyboard_tab.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 400;
+  color: #CC9933;
+  font-size: 16px;
+}
+
+.contacts-address{
+  margin-left: 34px;
+  margin-right: auto;
+}
+
+.contact-item{
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    color: #666666;
+    font-size: 20px;
+}
+
+.nav{
+  margin-top: 30px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.header-list{
+  padding-inline-start: 0px;
+  width: fit-content;
+  list-style-type: none;
+  margin-right: auto;
+}
+
+.header-list-item{
+  align-items: center;
+}
+
+.item{
+  margin: 0;
+  padding-left: 45px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-link{
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 400;
+  color: #666666;
+  font-size: 16px;  
+}
+
+.border{
+  margin: 10px 0 10px 56px;
+  border-left: 1px solid #E1E1E1;
+  height: 50px;
+}
+
+.btn{
+  border: 1px solid #CC9933;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  width: fit-content;
+  height: fit-content;
+  color: #CC9933;
+  background-color: #FFFFFF;
+  padding: 13px 20px;
+}
+
+.btn-want{
+  margin:14px 0 14px 57px;
+}
+
+.btn-backcall{
+  margin:14px 45px 14px 40px;
+}
+
+.section-title{
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 0 0 40px;
+}
+
+.card-special{
+  box-sizing: border-box;
+  margin: 20px 0 0 0;
+  padding: 0;  
+}
+
+.special-group:nth-child(1){
+  margin-bottom: 23px;
+}
+
+.card-special-text{
+  margin-left: 40px;  
+}
+
+.card-special-1{
+  width: 573px;
+  background: url(../img/maldives.jpg) no-repeat;
+  border-radius: 15px;
+}
+
+.card-special-2{
+  width: 573px;
+  background: url(../img/crete.jpg) no-repeat;
+  border-radius: 15px;
+}
+
+.card-special-3{
+  width: 573px;
+  background: url(../img/luxury.jpg) no-repeat;
+  border-radius: 15px;
+  margin-left: 23px;
+}
+
+.card-special-name-small{
+  margin: 0;
+  max-width: 350px;
+  color:#FFFFFF;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  padding-top: 40px;
+}
+
+.card-special-price-small{
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+.card-special-name-big{
+  margin: 0;
+  padding-top: 171px;
+  max-width: 350px;
+  color:#FFFFFF;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.card-special-price-big{
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+.card-special-details{
+  display: block;
+  background-image: url(../img/more.png);
+  background-repeat: no-repeat;
+  height: 16px;
+  width:110px;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding-top: 47px;
+}
+
+.description{
+  max-width: 888px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.card-services{
+  margin-top: 20px;
+}
+
+.service-item{
+  max-width: 573px;
+}
+
+.service-item:not(:nth-last-child(2),:nth-last-child(1)){ 
+  margin-bottom: 23px;
+}
+
+.service-item:not(:nth-child(2n)){ 
+  margin-right: 23px;
+}
+
+.image-service1{
+  background: url(../img/glasses.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.image-service2{
+  background: url(../img/table.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.image-service3{
+  background: url(../img/swimming-pool.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.image-service4{
+  background: url(../img/cars.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.card-services-content{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.card-img{
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+
+.wiev-otel{
+  width: fit-content;
+  font-family: inherit;
+  font-size: 16px;
+  margin: 0;
+}
+
+.rating{
+  width: fit-content;
+  font-family: inherit;
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-acc-img{
+  position: relative;
+  border-radius: 15px;
+}
+
+.card-services-name{
+  display: block;
+  height: 40px;
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+  margin: 191px 0 0 45px;
+  padding: 0;
+}
+
+.image-service-link1{
+  background: url(../img/image-link1.png) no-repeat;
+}
+
+.image-service-link2{
+  background: url(../img/image-link2.png) no-repeat;
+}
+
+.image-service-link3{
+  background: url(../img/image-link3.png) no-repeat;
+}
+
+.image-service-link4{
+  background: url(../img/image-link4.png) no-repeat;
+}
+
+.card-services-description{
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color:#000000;
+  margin: 1px 0 50px 45px;
+  padding-right: 126px;
+}
+
+.card-benefits{
+  margin: 30px 0 0 0;
+}
+
+.card-benefit-item{
+  width: 275px;
+  height: fit-content;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.card-benefit-item:not(:nth-child(1),:nth-child(2), :nth-child(3), :nth-child(4)){ 
+  margin-top: 23px;
+}
+
+.card-benefit-item:not(:nth-child(4n)){ 
+  margin-right: 23px;
+}
+
+.back-image1{
+  background-image: url(../img/bathtub.svg); 
+}
+
+.back-image2{
+  background-image: url(../img/hanger.svg);  
+}
+
+.back-image3{
+  background-image: url(../img/heating.svg);  
+}
+
+.back-image4{
+  background-image: url(../img/hotel-key.svg);  
+}
+
+.back-image5{
+  background-image: url(../img/parking.svg);  
+}
+
+.back-image6{
+  background-image: url(../img/reception.svg);  
+}
+
+.back-image7{
+  background-image: url(../img/security-box.svg);  
+}
+
+.back-image8{
+  background-image: url(../img/swimming-pool.svg);  
+}
+
+.back-image-properties{
+  background-size: 20%;
+  background-position: 45px 35px;
+  background-repeat: no-repeat;
+}
+
+.card-benefit-description{
+  max-width: 188px;
+  padding-top: 100px;
+  padding-left: 45px;
+  padding-bottom: 41px;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+.card-accommodation{
+  margin: 30px 0 0 0;
+}
+
+.card-accommodation-content:not(:nth-child(1),:nth-child(2), :nth-child(3)){ 
+  margin-top: 23px;
+}
+
+.card-accommodation-content:not(:nth-child(3n)){ 
+  margin-right: 23px;
+}
+
+.card-accommodation-content{
+  width: 374px;
+  height: fit-content;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.price, .star{
+  margin-top: 0;
+}
+
+.card-acc-price{
+  display: block;
+  width: fit-content;
+  margin: 36px 0 0 45px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.img-accomodation-1{
+  width: 14px;
+  height: 14px;
+  margin: 36px 0 0 44px;
+}
+
+.img-accomodation-2{
+  width: 14px;
+  height: 14px;
+  margin: 36px 0 0 6px;
+}
+
+.acc-name, .acc-country{
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 16px 0 0 45px;
+}
+
+.acc-country{
+  color: #999999;
+}
+
+.btn-acc{
+  margin: 20px auto 37px 45px;
+}
+
+.last-card{
+  background-image: url(../img/acc9.jpg);
+  background-repeat: no-repeat;
+  width: 374px;
+  height: inherit;
+}
+
+.card-accommodation-more{
+  display: block;
+  min-width: fit-content;
+  height: 40px;
+  background-image: url("../img/acc-more.png");
+  background-position: 45px;
+  margin-top: 373px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 200%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.form-search{
+  background-color: #E9E9E9;
+  border-radius: 15px;
+  box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-indent{
+  padding-top: 38px;
+  padding-bottom: 70px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.tour-search{
+  margin: 0 0 0 40px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 31px 28px;
+  margin-top: 19px;
+  margin-right: 45px;
+  justify-content:space-around;
+  box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-border{
+  border-left: 1px solid #CC9933;
+  padding-left: 20px;
+}
+
+.header-select{
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.select-text{
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.select-border-hidden{
+  border: none;
+}
+
+.select-border{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #CC9933;
+}
+
+.contacts-content{
+  background-color: #FFFFFF;
+  margin-top: 26px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-radius: 15px;
+}
+
+.contacts-text{
+  min-width: 375px;
+  margin-left: 45px;
+}
+
+.contacts-element{
+  justify-content: space-between;
+  padding-bottom: 23px;
+  margin-bottom: 25px;
+  border-bottom:  1px solid #C4C4C4;
+}
+
+.contact-name{
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.contact-text-content{
+  width: 235px;
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.contact-phone{
+  margin: 0;
+  padding: 0;
+  width: 235px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #CC9933;
+  text-decoration: none;
+}
+
+.email-text{
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #999999;
+}
+
+.contacts-button{
+  font-weight: 700;
+  padding: 27px 29px;
+  margin-top: 20px;
+}
+
+.contacts-img{
+  margin-left:  50px;
+  margin-right: 45px;
+}
+
+.footer{
+  margin: 20px auto;
+  padding: 44px 52px;
+  background-color: #333333;
+  border-radius: 15px;
+  background-image: url(../img/logo-footer.png);
+  background-repeat: no-repeat;
+  background-position: 738px bottom;
+  justify-content: space-between;
+}
+
+.footer-desc{
+  max-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.terms-of-use{
+  display: block;
+  margin-top: 49px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #CC9933;
+  text-decoration: none;
+}
+
+.footer-address{
+  max-width: 360px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.footer-phone{
+  margin: 14px 0 0 0;
+}
+
+.social{
+  margin: 20px 0 0 0;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+
+.social-link1{
+  background-image: url(../img/owl.png);
+  margin-top: 0;
+}
+
+.social-link2{
+  background-image: url(../img/twitter.png);
+}
+
+.social-link3{
+  background-image: url(../img/facebook.png);
+}
+
+.social-link4{
+  background-image: url(../img/vk.png);
+}
+
+.social-link5{
+  background-image: url(../img/instagram.png);
+}
